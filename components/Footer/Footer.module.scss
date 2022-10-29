@@ -1,0 +1,92 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  padding: 8rem 0rem 8rem 0rem;
+  user-select: none;
+  margin-top: 7rem;
+
+  @media screen and (max-width: 950px) {
+    padding: 4rem;
+  }
+
+  .footer_links {
+    display: flex;
+    gap: 15rem;
+    flex-wrap: wrap;
+
+    .list {
+      margin-top: 1rem;
+
+      .listTitle {
+        margin-bottom: 2.5rem;
+        font-size: 2.6rem;
+        font-weight: 600;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style-type: none;
+        font-size: 1.5rem;
+        color: #000;
+        font-weight: 500;
+
+        >li {
+          &:hover {
+            color: #c41e24;
+          }
+        }
+      }
+
+      .place {
+        margin-bottom: 2rem;
+
+        &:hover {
+          color: #718096;
+        }
+      }
+    }
+
+    .paragraph {
+      font-family: sora;
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 3rem;
+      margin-top: 2.4rem;
+      color: rgba(0, 0, 0, 0.6);
+
+      .bold {
+        color:
+          rgba(0, 0, 0, 1);
+      }
+    }
+  }
+
+  .author {
+    max-width: 31.5rem;
+  }
+
+  .social {
+    h3 {
+      margin-bottom: 1.8rem;
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    .socialicon {
+      display: flex;
+      font-size: 4rem;
+      gap: 0.7rem;
+      cursor: pointer;
+
+      a {
+        &:hover {
+          color: #c41e24;
+        }
+      }
+    }
+  }
+}

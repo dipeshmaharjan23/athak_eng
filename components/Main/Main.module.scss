@@ -1,0 +1,147 @@
+.main {
+    margin-top: 9rem;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+        .left {
+            flex: 0.5;
+
+            .title {
+                font-size: 3.6rem;
+                font-weight: 600;
+                margin-bottom: 3rem;
+                font-family: 'Sora', sans-serif;
+            }
+
+            p {
+                max-width: 610px !important;
+                font-size: 2.2rem;
+                font-weight: 200;
+                line-height: 3rem;
+                max-width: 100%;
+                color:
+                    rgba(0, 0, 0, 0.6);
+                font-family: 'Sora', sans-serif;
+            }
+
+            .button {
+                display: flex;
+                gap: 3.1rem;
+                margin-top: 15rem !important;
+
+                >:first-child {
+                    &:hover {
+                        background: #fff;
+                        color: #E80000;
+                        border: 1px solid #E80000;
+                    }
+                }
+
+                >:last-child {
+                    &:hover {
+                        background: #E80000;
+                        color: #fff;
+                    }
+                }
+
+                .btn {
+                    width: 23.2rem;
+                    height: 5.5rem;
+                    font-size: 1.6rem;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+
+                .first {
+                    background: #E80000;
+                    color: #fff;
+                    border: none;
+                }
+
+                .second {
+                    border: 1px solid #E80000;
+                    background: #fff;
+                }
+            }
+        }
+
+        .right {
+            flex: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        .container {
+            .left {
+                flex: 1;
+                width: 100%;
+
+                .button {
+                    flex-wrap: wrap;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 8rem;
+                    margin-bottom: 4rem;
+                }
+            }
+
+            .right {
+                margin: auto;
+                width: 100%;
+
+                img {
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main {
+        .container {
+            .left {
+                .button {
+                    margin-top: 8rem !important;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .right {
+                margin: auto;
+                width: 100%;
+
+                img {
+                    transform: scale(0.6);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:10240px) {
+    .main {
+        .container {
+            .left {
+                flex: 1;
+                .button {
+                    margin-top: 12rem;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .right {
+                margin: auto;
+                width: 100%;
+                margin-top: 5rem;
+            }
+        }
+    }
+}
