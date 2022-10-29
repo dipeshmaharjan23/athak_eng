@@ -10,13 +10,13 @@ import MediaSection from "../MediaSection/Media"
 const Homepage = () => {
     return (
         <>
-                <Navbar />
+            <Navbar />
             <div className={styles.container}>
                 <Main />
                 <Section />
-                 <Quoto/>
+                <Quoto />
                 <MediaSection />
-                <Subscribe/> 
+                <Subscribe />
                 <Footer />
             </div>
         </>
