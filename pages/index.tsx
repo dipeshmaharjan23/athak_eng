@@ -6,9 +6,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Athak</title>
+        <title>
+          MAHESHWOR JUNG GAHATRAJ (ATHAK)
+        </title>
       </Head>
-        <Homepage />
+      <Homepage />
     </>
   )
 }
